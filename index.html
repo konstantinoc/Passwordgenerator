@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/ico" href="img/fav.ico"/>
+        <title>Password Generator</title>
+    </head>
+    <body>
+        <div id="main">
+            <div id="title-box">
+                <h1 id="title">Secure Password Generator</h1>
+                <hr>
+            </div>
+
+            <div id="grid-container">
+                <div class="grid-child">
+                    <div class="item">
+                        <label for="txtLength">Password Length:</label>
+                    </div>
+
+                    <div class="item">
+                        <label for="chkSymbols">Include Lowercase Characters:</label>                  
+                    </div>
+
+                    <div class="item">
+                        <label for="chkSymbols">Include Uppercase Characters:</label>
+                    </div>
+
+                    <div class="item">
+                        <label for="chkSymbols">Include Symbols:</label>
+                    </div>
+
+                    <div class="item">
+                        <label for="chkSymbols">Include Numbers:</label>
+                    </div>
+
+                    <div class="item">
+                        <label for="chkSymbols">Exclude Ambiguous Characters:</label>
+                    </div>
+
+                </div>
+                <div class="grid-child">
+                    <div class="item">
+                        <input id="txtLength" type="number" value="13">
+                    </div>
+
+                    <div class="item">
+                        <input id="chkLowers" type="checkbox" checked>
+                        <label for="">( e.g. abcdefgh )</label>
+                    </div>
+
+                    <div class="item">
+                        <input id="chkCapitals" type="checkbox" checked>
+                        <label for="">( e.g. ABCDEFGH )</label>
+                    </div>
+
+                    <div class="item">
+                        <input id="chkSymbols" type="checkbox" checked>
+                        <label for="">( e.g. @#$% )</label>
+                    </div>
+
+                    <div class="item">
+                        <input id="chkNumbers" type="checkbox" checked>
+                        <label for="">( e.g. 123456 )</label>
+                    </div>
+
+                    <div class="item">
+                        <input id="chkAmb" type="checkbox">
+                        <label for="">( { } [ ] ( ) / \ ' " ` ~ , ; : . < > )</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="generate">
+                <span>Generate Password</span>
+            </div>
+
+            <div id="password">
+                <span id="label_passwrd">Your Password: </span>
+
+                <textarea readonly name="genarated_password" id="gen_passwrd" cols="30" rows="10"></textarea>
+
+                <div id="copy">
+                    <span>Copy</span>
+                </div>
+
+            </div>
+        </div>
+        <script src="js/generator.js"></script>
+        <script src="js/copy.js"></script>
+    </body>
+</html>
