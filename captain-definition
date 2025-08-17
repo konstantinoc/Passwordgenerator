@@ -1,5 +1,4 @@
 {
   "schemaVersion": 2,
-  "templateId": "static-site",
-  "templateVersion": 1
+  "dockerfilePath": "./Dockerfile"
 }
