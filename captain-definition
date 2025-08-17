@@ -1,4 +1,5 @@
 {
   "schemaVersion": 2,
-  "templateId": "static-site"
+  "templateId": "static-site",
+  "templateVersion": 1
 }
